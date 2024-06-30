@@ -14,4 +14,4 @@ node_modules
 !.yarn/plugins
 .pnp.*
 /dist
-js
+.js/*

@@ -1,5 +1,5 @@
 <?php
 
-use FelipeVa\InertiaTable\Tests\TestCase;
+use MNPLUS\InertiaTable\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

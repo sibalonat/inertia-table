@@ -2,7 +2,7 @@
     "name": "sibalonat/inertia-table",
     "description": "A Laravel package to help you quickly build Inertia.js data tables with the help of Laravel Query Builder and Spatie's Laravel Data.",
     "keywords": [
-        "felipeva",
+        "sibalonat",
         "laravel",
         "inertiajs",
         "inertia-table"

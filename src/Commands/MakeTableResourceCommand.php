@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Commands;
+namespace MNPLUS\InertiaTable\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

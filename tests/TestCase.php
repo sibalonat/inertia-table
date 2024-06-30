@@ -1,8 +1,8 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Tests;
+namespace MNPLUS\InertiaTable\Tests;
 
-use FelipeVa\InertiaTable\InertiaTableServiceProvider;
+use MNPLUS\InertiaTable\InertiaTableServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'FelipeVa\InertiaTable\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'MNPLUS\InertiaTable\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

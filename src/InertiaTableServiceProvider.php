@@ -1,12 +1,12 @@
 <?php
 
-namespace FelipeVa\InertiaTable;
+namespace MNPLUS\InertiaTable;
 
-use FelipeVa\InertiaTable\Commands\MakeTableResourceCommand;
-use Illuminate\Support\Enumerable;
 use Inertia\Response;
+use Illuminate\Support\Enumerable;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use MNPLUS\InertiaTable\Commands\MakeTableResourceCommand;
 
 class InertiaTableServiceProvider extends PackageServiceProvider
 {
@@ -16,25 +16,29 @@ class InertiaTableServiceProvider extends PackageServiceProvider
             ->hasCommand(MakeTableResourceCommand::class);
     }
 
-    public function bootingPackage(): void
+    public function boot(): void
     {
+        // Ensure Response is the Inertia\Response
         Response::macro('getTableProps', function () {
+            /** @var Response $this */
             return $this->props['tableProps'] ?? [];
         });
 
-        Response::macro('table', function (Table $table) {
+        Response::macro('table', function ($table) {
+            /** @var Response $this */
+            // Ensure $table->build($this) returns Response
             return $table->build($this);
         });
 
-        Response::macro('tables', function (array $tables): Response {
+        Response::macro('tables', function (array $tables) {
+            /** @var Response $this */
             $response = $this;
 
-            /** @var Enumerable<int, Table> $tables */
-            $tablesCollection = collect($tables);
+            collect($tables)->each(function ($table) use ($response) {
+                // Ensure $table->build($response) returns void or Response
+                $table->build($response);
+            });
 
-            $tablesCollection->each(fn (Table $table) => $table->build($response));
-
-            /** @phpstan-ignore-next-line */
             return $response;
         });
     }

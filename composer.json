@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/contracts": "^10.0",
+        "illuminate/contracts": "^10.48.14",
         "illuminate/http": "^10.0",
         "illuminate/pagination": "^10.0",
         "illuminate/support": "^10.0",

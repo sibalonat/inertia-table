@@ -1,8 +1,8 @@
 <?php
 namespace {{ namespace }};
 
-use FelipeVa\InertiaTable\Data\Column;
-use FelipeVa\InertiaTable\TableResource;
+use MNPLUS\InertiaTable\Data\Column;
+use MNPLUS\InertiaTable\TableResource;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class {{ class }} extends TableResource

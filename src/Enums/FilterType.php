@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Enums;
+namespace MNPLUS\InertiaTable\Enums;
 
 enum FilterType: string
 {

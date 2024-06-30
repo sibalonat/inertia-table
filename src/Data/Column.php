@@ -1,9 +1,9 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Data;
+namespace MNPLUS\InertiaTable\Data;
 
-use FelipeVa\InertiaTable\Contracts\TableComponent;
-use FelipeVa\InertiaTable\Traits\Makeable;
+use MNPLUS\InertiaTable\Contracts\TableComponent;
+use MNPLUS\InertiaTable\Traits\Makeable;
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;

@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Traits;
+namespace MNPLUS\InertiaTable\Traits;
 
 use Illuminate\Support\Str;
 

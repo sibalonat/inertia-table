@@ -1,11 +1,11 @@
 <?php
 
-namespace FelipeVa\InertiaTable;
+namespace MNPLUS\InertiaTable;
 
-use FelipeVa\InertiaTable\Contracts\TableComponent;
-use FelipeVa\InertiaTable\Data\Column;
-use FelipeVa\InertiaTable\Data\Filter;
-use FelipeVa\InertiaTable\Data\Search;
+use MNPLUS\InertiaTable\Contracts\TableComponent;
+use MNPLUS\InertiaTable\Data\Column;
+use MNPLUS\InertiaTable\Data\Filter;
+use MNPLUS\InertiaTable\Data\Search;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Collection;

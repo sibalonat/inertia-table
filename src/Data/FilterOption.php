@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Data;
+namespace MNPLUS\InertiaTable\Data;
 
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Data;

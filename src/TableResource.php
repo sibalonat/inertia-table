@@ -1,10 +1,10 @@
 <?php
 
-namespace FelipeVa\InertiaTable;
+namespace MNPLUS\InertiaTable;
 
-use FelipeVa\InertiaTable\Data\Column;
-use FelipeVa\InertiaTable\Data\Filter;
-use FelipeVa\InertiaTable\Data\Search;
+use MNPLUS\InertiaTable\Data\Column;
+use MNPLUS\InertiaTable\Data\Filter;
+use MNPLUS\InertiaTable\Data\Search;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;

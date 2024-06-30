@@ -1,6 +1,6 @@
 <?php
 
-namespace FelipeVa\InertiaTable\Contracts;
+namespace MNPLUS\InertiaTable\Contracts;
 
 /**
  * @property string $name

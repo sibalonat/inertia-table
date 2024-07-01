@@ -3,7 +3,6 @@
 namespace MNPLUS\InertiaTable;
 
 use Inertia\Response;
-use Illuminate\Support\Enumerable;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use MNPLUS\InertiaTable\Commands\MakeTableResourceCommand;

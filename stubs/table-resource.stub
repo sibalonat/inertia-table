@@ -7,6 +7,11 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 class {{ class }} extends TableResource
 {
+    public function __construct($subject, $request)
+    {
+
+    }
+
     protected function query(): QueryBuilder
     {
         return $this->builder()
